@@ -26,15 +26,11 @@
 	<br>
 	<br>
 	<button name="submit">Submit</button>
-	<div>
-	
-	
-		
+	<div>	
 	</form>
 	</div>
 	</div>
 	</nav>
-	<!--<img src="img/1.jpg">-->
 </header>
 </body>
 </html>
@@ -45,7 +41,6 @@ if(isset($_POST['submit']))
 	$area = $_POST['area'];
 	$_SESSION['area'] = $area;
 	header('location:select.php');
-	//echo $area;
 		$connect = mysqli_connect("localhost","root","","parking") or die("couldn't connect");
 
 		$sql = "SELECT * from parkinglot WHERE area='$area'";

@@ -13,7 +13,7 @@
 	<p align="center" style="font-family: sans-serif; color:#fff; text-transform: uppercase; border: 10px solid #298594; width: 300px; font-size: 42px;text-align: center;margin-left: auto;margin-right: auto;"><?php session_start(); echo $_SESSION['uid'] ?></p>
 	<div style="border: 5px solid #298594; width:900px; margin: auto; background-color: #8fd648">
 		<form  align="center" style="margin-top: 70px; font-size: 42px; color: #fff" method="POST" action="parking.php">
-		Vehicle No: <input type="text" name="vehicleNo" style="width: 370px;text-transform:uppercase" required>
+		Vehicle No: <input pattern="[A-Za-z0-9].{6,}" title="Only alphabets and numbers" type="text" name="vehicleNo" style="width: 370px;text-transform:uppercase" required>
 		<br>
 		<input type="radio" name="wheel" value="2" class="radio" required>2-Wheeler
 		<input type="radio" name="wheel" value="4" class="radio" required>4-Wheeler
