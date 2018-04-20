@@ -1,0 +1,39 @@
+.main-wrapper{
+	margin: 0 auto;
+	width: 1000px;
+}
+body{
+	background-image: url("img/bgimg.jpg");
+}
+header nav {
+	width: 100%;
+	height: 60px;
+	/*background-color: #ccc;*/
+}
+input,button,p{
+	font-family: sans-serif;
+	font-size: 42px;
+	border-radius: 16px;
+}
+button{
+	padding: 5px;
+}
+
+
+#error{
+	display: none;
+	color: red;
+	margin-right: 40px;
+}
+table,td,tr{
+    /*border: 4px solid #3CCF9A;*/
+    font-family: sans-serif;
+}
+.radio{
+width:30px !important;
+height:30px !important;
+margin-top: 50px
+}
+a{
+	color:red;
+}
